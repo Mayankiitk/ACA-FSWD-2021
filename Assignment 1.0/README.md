@@ -18,7 +18,7 @@ This is a very basic representation of an ".md" file :smile: .
 
     - *Syntax* : ~ mkdir "(optional)location of new folder"\"name of the file"
     
-    - *To add multiple folders* : ~ mkdir "name of file1"\"name of file2"\"name of file3"\ ...
+    - *To add multiple folders* : ~ mkdir "name of file1"\\"name of file2"\\"name of file3"\\ ...
 
 4. ***ren*** : Renames a folder in a directory.
 
