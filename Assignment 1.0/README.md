@@ -1,5 +1,7 @@
 # INTRODUCTION
 
+This is introduction.
+
 This is a very basic representation of an ".md" file :smile: .
 
 ## CMD COMMANDS --
