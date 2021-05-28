@@ -12,6 +12,7 @@ let homedtbtn = document.getElementById("dt");
 let displaytkn= document.getElementById("user_token");
 const getToken = async () => {
     await fetch(url+"/get_token").then(res => res.json()).then(data => {tkn = data['token'].toString();});
+    
 };
 
 
