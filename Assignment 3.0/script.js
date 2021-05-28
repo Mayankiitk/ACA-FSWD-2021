@@ -10,18 +10,19 @@ let datapage = document.getElementById("getdata");
 let hometknbtn = document.getElementById("tkn");
 let homedtbtn = document.getElementById("dt");
 let displaytkn= document.getElementById("user_token");
-/*const gettkn = async () => {
+const getToken = async () => {
     await fetch(url+"/get_token").then(res => res.json()).then(data => {tkn = data['token'].toString();});
 };
 
 
 hometknbtn.addEventListener('click', async () => {
-    await gettkn();
+    await getToken();
     home.style.display = 'none'; form.style.display = 'block'; datapage.style.display = 'none';
     displaytkn.innerHTML="(Your unique token is : )"+tkn;
     
-});*/
-const getToken = async () => {
+});
+
+/*const getToken = async () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -30,7 +31,7 @@ const getToken = async () => {
     };
     xhttp.open("GET","http://127.0.0.1:12345/get_token", true);
     xhttp.send();
-};
+};*/
 
 // Events
 hometknbtn.addEventListener('click', async () =>{
