@@ -3,8 +3,49 @@
     <meta charset="utf-8">
     <title>EXAMPLE AJAX</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 </head>
 <body>
-    
+    <div class="container" id="main">
+        <hr color="black">
+        <br>
+        New User? => Get your token now! : <button id="tkn" class="btn">Get Token</button><br><br>
+        Retrieve data of any user using a token :
+        <button id="dt" class="btn">Get Data</button>
+        <br>
+        <br>
+        <hr color="black">
+    </div>
+    <div class="regfrm" id="reg">
+        <button id="back" class="btn" style="text-align: left;">Back to Home</button>
+        <hr color="black">
+        <br>Please fill out the form : <br>
+        <p class="token" id="user_token">(Your unique token is : )</p><br>
+        <form action="" id="regfrm">
+            <label for="name">Username :</label>
+            <input type="text"></input><br><br>
+            <label for="Data">Data :</label>
+            <input type="text"></input>
+            <br><br>
+            <input type="submit" class="btn" style="margin-left: 100px; padding: 5px;"></input>
+        </form>
+    </div>
+    <div class="getdata" id="getdata">
+        <button id="back" class="btn" style="text-align: left;">Back to Home</button>
+        <hr color="black">
+        <br>Please fill in your token : <br>
+        <form action="" id="Tknfrm">
+            <label for="token">Token :</label>
+            <input type="text"></input><br><br>
+            <input type="submit" class="btn" style="margin-left: 100px; padding: 5px;"></input>
+        </form>
+        <div class="show" id="show">
+            <span>USERNAME: </span> <span id="uname"></span><br><br>
+            <span>DATA: </span><span id="udata"></span>
+        </div>
+    </div>
 </body>
 </html>
