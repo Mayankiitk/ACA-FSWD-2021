@@ -20,8 +20,7 @@ const getToken = async () => {
     let response=await fetch(url+"/get_token");
     if(response.ok)
     {
-        let json = await (await response.text()).toString();
-        tkn=json.slice(14,30);
+        tkn= (await response.json()).token;
     }
     else
     {
@@ -29,9 +28,10 @@ const getToken = async () => {
     }
 };
 
-// Events
 hometknbtn.addEventListener('click', async () =>{
     await getToken();
+    unameinp.innerHTML="";
+    udatainp.innerHTML="";
     fill.innerHTML="";
     home.style.display = 'none';
     regpage.style.display = 'block';
