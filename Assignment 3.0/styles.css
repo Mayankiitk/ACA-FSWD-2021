@@ -1,7 +1,7 @@
 body
 {
      background-color: #8bc0bc;
-     font-family: 'Artifika';font-size: 22px;
+     font-family: 'Flamenco';font-size: 30px;
      font-weight: bold;
 }
 #main
@@ -38,7 +38,7 @@ body
     border-width: 100px;
     display: none;
 }
-#regfrm, #Tknfrm
+#regfrm, #tknfrm
 {
     font-size: smaller;
     font-weight: lighter;
@@ -67,4 +67,11 @@ body
     font-size: smaller;
     opacity:0.8;
     display: none;
+}
+#res
+{
+    font-size: smaller;
+    font-weight: bolder;
+    color: rgb(58, 143, 19);
+    background-color: #aad4d1;
 }

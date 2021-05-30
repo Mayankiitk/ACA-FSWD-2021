@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
 </head>
 <body>
     <div class="container" id="main">
@@ -25,21 +26,22 @@
         <br>Please fill out the form : <br>
         <p class="token" id="user_token"></p><br>
         <form action="" id="regfrm">
-            <label for="name">Username :</label>
-            <input type="text"></input><br><br>
-            <label for="Data">Data :</label>
-            <input type="text"></input>
+            <label for="name">Username :</label> &emsp;
+            <input type="text" id="nameinp"></input><br><br>
+            <label for="Data">Data :</label> &emsp;
+            <input type="text" id="datainp"></input>
             <br><br>
             <input type="submit" class="btn" style="margin-left: 100px; padding: 5px;"></input>
         </form>
+        <p id="res"></p><br>
     </div>
     <div class="getdata" id="getdata">
-        <button id="back" class="btn" style="text-align: left;">Back to Home</button>
+        <button id="back_sec" class="btn" style="text-align: left;">Back to Home</button>
         <hr color="black">
-        <br>Please fill in your token : <br>
-        <form action="" id="Tknfrm">
+        <br>Please fill in your token : <br><br>
+        <form action="" id="tknfrm">
             <label for="token">Token :</label>
-            <input type="text"></input><br><br>
+            <input type="text" id="tokeninp"></input><br><br>
             <input type="submit" class="btn" style="margin-left: 100px; padding: 5px;"></input>
         </form>
         <div class="show" id="show">
